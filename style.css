@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
+canvas {
+    position: fixed;
+    top: 5vh;
+    left: 5vh;
+    border: 1px solid black;
+}
