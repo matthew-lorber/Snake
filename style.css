@@ -1,10 +1,47 @@
+@font-face {
+    font-family: gothic;
+    src: url(./DidactGothic-Regular.ttf);
+    font-display: block;
+}
 * {
     box-sizing: border-box;
 }
-
+body {
+    font-family:gothic;
+    background:#222;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:fixed;
+    top:0;
+    left:0;
+    margin:none;
+    padding:none;
+    width:100vw;
+    height:100vh;
+    color:white;
+    font-weight:normal;
+}
 canvas {
-    position: fixed;
-    top: 5vh;
-    left: 5vh;
-    border: 1px solid black;
+    width:calc(min(50vw,50vh));
+    height:calc(min(50vw,50vh));
+    background:#111;
+}
+#score {
+    position:absolute;
+    padding-bottom:3px;
+}
+#options {
+    width:100%;
+    text-align:right;
+    padding-bottom:3px;
+    transition:all 1s ease-in-out;
+}
+#start:hover {
+    cursor:pointer;
+    font-weight:bold;
+}
+#ll,
+#tt {
+    color:rgb(18, 243, 18);
 }

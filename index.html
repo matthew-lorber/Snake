@@ -5,11 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Snake</title>
-    <link rel="shortcut icon" href="./snake.png">
+    <link rel="shortcut icon" href="./apple.png">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <canvas id="canvas" width="400" height="400">sorry, your browser doesn't support canvas</canvas>
+    
+    <main>
+        <div id="score"><span id="apples">0</span>&nbsp;<img id="apple" src="./apple.png" alt="apple"></div>
+        <div id="options">
+            <span id="length">length: <span id="ll">4</span>&nbsp;&nbsp;</span>
+            <span id="interval">interval: <span id="tt">250</span>ms</span>
+        </div>
+        <canvas id="canvas" width="400" height="400" background="#111">sorry, your browser doesn't support canvas</canvas>
+        <!-- <span id="start">start</span> -->
+    </main>
+    
     <script src="./index.js"></script>
 </body>
 </html>
